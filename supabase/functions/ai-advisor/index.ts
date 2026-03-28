@@ -100,7 +100,7 @@ Remember: Start with YES or NO, then provide detailed analysis with reasoning.`;
       { role: 'user', content: message }
     ];
 
-    const aiResponse = await fetch('https://api.lovable.dev/v1/chat/completions', {
+    const aiResponse = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
